@@ -1,0 +1,21 @@
+{
+  "name": "modulo42",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start_client": "npm start --prefix front",
+    "start_node": "node index.js",
+    "start_dev":"concurrently \"npm run start_node\" \"npm run start_client\"",
+    "postinstall": "npm install --prefix front"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
